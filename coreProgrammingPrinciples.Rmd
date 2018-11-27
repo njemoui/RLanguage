@@ -1,0 +1,128 @@
+```{r}
+#Type of variables :
+
+#integer
+x <- 2L
+typeof(x)
+
+#double
+y <- 2.5
+typeof(y)
+
+#by default R type is a double
+
+#complex
+z <- 3 + 2i
+typeof(z)
+
+#character
+a <- "h"
+typeof(a)
+
+#logical
+q <- T
+typeof(q)
+```
+```{r}
+#Using Variables : 
+
+A <- 10
+B <- 5
+
+C <- A + B
+
+#to print just write the object
+C
+
+var1 <- 2.5
+var2 <- 4
+
+result <- var1 / var2
+result
+
+answer <- sqrt(var2)
+answer
+
+greeting <- "Hello"
+name <- "Bob"
+
+message <- paste(greeting,name)
+message
+
+```
+
+```{r}
+# Logical Variables and operators
+
+#Logical : 
+#True T
+#False F
+
+4 < 5
+7 > 20
+4 == 5
+
+# ==
+# !=
+# <
+# >
+# <=
+# >=
+# !
+# |
+# &
+# isTRUE(x)
+
+result <- 4 < 5
+result
+typeof(result)
+
+result2 <- !(5 > 1)
+result2
+
+result | result2
+result & result2
+isTRUE(result)
+```
+
+```{r}
+#Loops
+
+#while loop
+while(T){
+  print("Hello")
+}#infinit loop
+
+counter <- 1
+while(counter < 12){
+  print("hello")
+  counter <- counter + 1
+}
+
+#for loop
+for(i in 1:5){
+  print("Hello R")
+}
+```
+
+```{r}
+#Conditions
+rm(answer)
+x <- rnorm(1)
+if(x > 1){
+  answer <- "Greater than 1"
+} else {
+  if(x >= -1){
+    answer <- "Between -1 and 1"
+  } else {
+    answer <- "Less than 1"
+  }
+}
+```
+
+
+```{r}
+#Homework : law of large numbers
+
+```
+
