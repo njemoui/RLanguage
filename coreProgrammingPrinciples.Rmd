@@ -123,6 +123,15 @@ if(x > 1){
 
 ```{r}
 #Homework : law of large numbers
-
+#verify if rnorm which depend of normal distribution respect the law of large number
+N <- 1000000
+counter <- 0
+for (x in rnorm(N)){
+  if(x > -1 & x < 1){
+    counter <- counter + 1
+  }
+}
+answer <- counter / N
+answer
 ```
 
